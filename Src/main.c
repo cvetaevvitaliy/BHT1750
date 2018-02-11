@@ -100,7 +100,7 @@ int main(void)
   MX_USART1_UART_Init();
   /* USER CODE BEGIN 2 */
 
-  char debug[32];
+  char debug[40];
 
   lightSensorConfig.i2c = &hi2c1;
   bht1750_init(&lightSensorConfig, &lightSensor);
@@ -112,9 +112,8 @@ int main(void)
   while (1)
   {
 
-	  luxValue = bht1750_getValue(&lightSensor);
-
-	  snprintf(debug, 32, "lux: %d\r", luxValue);
+	  luxValue = bht1750_readContinuous(&lightSensor, BHT1750_CONT_HRES_MODE);
+	  snprintf(debug, 40, "continuous lux value: %d\r", luxValue);
 	  HAL_UART_Transmit(&huart1, (uint8_t*)debug, strlen(debug), 100);
 
 	  HAL_Delay(500);
