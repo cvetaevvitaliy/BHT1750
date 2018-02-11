@@ -5,7 +5,6 @@ This library was developed and tested only with *STM32F030XX*. I currently don't
 ## TODO
 
 - Create more examples for once reading, continuous reading, different reading modes
-- Separate the library files into one single repository and generate documentation
 - Photos/Videos of wiring and how it works
 - Adjust the library to use interrupts (currently it's blocking)
 - Add debugging improvement by adding a new enum with the action results of each method in the library

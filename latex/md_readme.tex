@@ -1,0 +1,45 @@
+This library was developed and tested only with {\itshape S\+T\+M32\+F030\+XX}. I currently don\textquotesingle{}t have other boards to test the implementation on other generations but it should work as expected. As soon as I can get any, I\textquotesingle{}ll update the library.
+
+\subsection*{T\+O\+DO}
+
+
+\begin{DoxyItemize}
+\item Create more examples for once reading, continuous reading, different reading modes
+\item Separate the library files into one single repository and generate documentation
+\item Photos/\+Videos of wiring and how it works
+\item Adjust the library to use interrupts (currently it\textquotesingle{}s blocking)
+\item Add debugging improvement by adding a new enum with the action results of each method in the library
+\item Release version 1.\+0
+\end{DoxyItemize}
+
+\subsection*{Usage}
+
+Just copy the {\ttfamily bht1750.\+h} from Inc folder and {\ttfamily bht1750.\+c} from Src folder to your project and see the {\ttfamily main.\+c} as a refference on how to initialise and use the library.
+
+\subsection*{Hardware Setup}
+
+Connect the wiring as follows\+:
+
+S\+T\+M32 B\+H\+T1750
+
+G\+ND -\/$>$ G\+ND
+
+3.\+3V -\/$>$ V\+CC
+
+S\+CL -\/$>$ S\+CL
+
+S\+DA -\/$>$ S\+DA
+
+G\+ND -\/$>$ S\+D0 (this will pull low the S\+D0 line on the sensor and the slave address will be 0x23. IF you pull high this line, you\textquotesingle{}ll get the other sensor address which is 0x5C)
+
+\subsection*{Software setup}
+
+Enable the I2C interface on your S\+T\+M32 and select the fast mode (400\+K\+Hz)
+
+\subsection*{Implementation details}
+
+This library blocks the main thread using {\ttfamily H\+A\+L\+\_\+\+Delay()} to perform readings of the sensor from the I2C bus. It sends the right sequences of bytes to the sensor to power it up, start measurement, do readings, etc. The library supports continuous mode reading and only once reading mode. To optimise power consumption you can use the read once method or after performing several readings you can power off the sensor.
+
+\subsection*{License}
+
+Library is licensed using G\+NU General Public License v3.\+0 
