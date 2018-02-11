@@ -11,14 +11,24 @@ This library was developed and tested only with *STM32F030XX*. I currently don't
 - Add debugging improvement by adding a new enum with the action results of each method in the library
 - Release version 1.0
 
+## Usage
+
+Just copy the `bht1750.h` from Inc folder and `bht1750.c` from Src folder to your project and see the `main.c` as a refference on how to initialise and use the library. 
+
 ## Hardware Setup
 
 Connect the wiring as follows:
+
 STM32 BHT1750
+
 GND -> GND
+
 3.3V -> VCC
+
 SCL -> SCL
+
 SDA -> SDA
+
 GND -> SD0 (this will pull low the SD0 line on the sensor and the slave address will be 0x23. IF you pull high this line, you'll get the other sensor address which is 0x5C)
 
 ## Software setup
