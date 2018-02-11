@@ -1,10 +1,9 @@
 sources := \
-$(wildcard inc/*.h) \
-$(wildcard src/*.c) \
+$(wildcard Inc/*.h) \
+$(wildcard Src/*.c) 
 
 docs: $(sources) Doxyfile
 	doxygen
-
 
 
 gcc-arm-none-eabi-5_4-2016q3/bin/arm-none-eabi-gcc:

@@ -22,4 +22,3 @@
 "Src/stm32f0xx_it.o"
 "Src/system_stm32f0xx.o"
 "Src/usart.o"
-"startup/startup_stm32f030x6.o"

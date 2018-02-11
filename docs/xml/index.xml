@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.14">
+  <compound refid="structbht1750" kind="struct"><name>bht1750</name>
+    <member refid="structbht1750_1a391300894d34e8321b09b4d3667fdba3" kind="variable"><name>buffer</name></member>
+    <member refid="structbht1750_1ad5e6c37eb3f48508ee15b279db4e1a74" kind="variable"><name>rawLuxValue</name></member>
+    <member refid="structbht1750_1a229822154df7f3b7266e826e283c57e5" kind="variable"><name>config</name></member>
+  </compound>
+  <compound refid="structbht1750__config" kind="struct"><name>bht1750_config</name>
+    <member refid="structbht1750__config_1a23e125244a7e27ff9ccc31b3b8495cfe" kind="variable"><name>i2c</name></member>
+    <member refid="structbht1750__config_1af227be20459ab4b36c0be1dbaa170dad" kind="variable"><name>state</name></member>
+  </compound>
+  <compound refid="bht1750_8h" kind="file"><name>bht1750.h</name>
+    <member refid="bht1750_8h_1a5ff454728a9a164b5469717c044546f4" kind="define"><name>STM32F0</name></member>
+    <member refid="bht1750_8h_1a666845b9dfa0ae4aa84362c4a0ae00b7" kind="define"><name>BHT1750_I2C_ADDRESS</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kind="enum"><name>BHT1750_STATE</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baa77a430150ed70514deaa4f7384a1203" kind="enumvalue"><name>BHT1750_POWER_DOWN</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baed1247da9e97b879dacd18a661910e35" kind="enumvalue"><name>BHT1750_POWER_UP</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bae63f733e76255ccf07d9a5a2789df612" kind="enumvalue"><name>BHT1750_RESET</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba1379ee730f34c9cd6ba5927d741ab4f9" kind="enumvalue"><name>BHT1750_CONT_HRES_MODE</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba4ef312646dfcdb2e516db5fcffeea951" kind="enumvalue"><name>BHT1750_CONT_HRES_MODE2</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6badbd3b1e2362c6ad59d07a20dc74c2da7" kind="enumvalue"><name>BHT1750_CONT_LRES_MODE</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bad59646077fb36e8e81afc8e185968279" kind="enumvalue"><name>BHT1750_ONCE_HRES_MODE</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba57ce7c6e79fc1b394767146baf848985" kind="enumvalue"><name>BHT1750_ONCE_HRES_MODE2</name></member>
+    <member refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba6ea7c483f06288ed80ec2fba49c3c2a4" kind="enumvalue"><name>BHT1750_ONCE_LRES_MODE</name></member>
+    <member refid="bht1750_8h_1aad36f34327b7e113ed83c6b4760ecc18" kind="function"><name>bht1750_init</name></member>
+    <member refid="bht1750_8h_1af7d3e6b391b440025292431e3349d233" kind="function"><name>bht1750_powerDown</name></member>
+    <member refid="bht1750_8h_1a042d8e0a0bca2e86bd7f2461bce01df0" kind="function"><name>bht1750_powerUp</name></member>
+    <member refid="bht1750_8h_1aa9221c119f266785c7e46b01c8f3db94" kind="function"><name>bht1750_reset</name></member>
+    <member refid="bht1750_8h_1a55b538c2c9dc288adaf05221c63662ad" kind="function"><name>bht1750_readOnce</name></member>
+    <member refid="bht1750_8h_1a100414faf5f799bc529712256e0b97b3" kind="function"><name>bht1750_readContinuous</name></member>
+    <member refid="bht1750_8h_1acdb9f37363a448bdeb96ab111c105cba" kind="function"><name>bht1750_transformValue</name></member>
+  </compound>
+  <compound refid="dir_f93dfce691d792349f1c14ede440e2e6" kind="dir"><name>Inc</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>

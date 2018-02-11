@@ -1,10 +1,6 @@
-/*
- * bht1750.h
+/*! \mainpage BHT1750 Library
  *
- *  Created on: Feb 9, 2018
- *      Author: laalex
  */
-
 #ifndef BHT1750_H_
 #define BHT1750_H_
 
@@ -17,6 +13,7 @@
 #endif
 
 #include <stdbool.h>
+
 
 /**
  * Sensor address

@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structbht1750" kind="struct" language="C++" prot="public">
+    <compoundname>bht1750</compoundname>
+    <includes refid="bht1750_8h" local="no">bht1750.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbht1750_1a391300894d34e8321b09b4d3667fdba3" prot="public" static="no" mutable="no">
+        <type>uint8_t</type>
+        <definition>uint8_t buffer[5]</definition>
+        <argsstring>[5]</argsstring>
+        <name>buffer</name>
+        <briefdescription>
+<para>Buffer used for sending and receiving data via i2c. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="90" column="1" bodyfile="Inc/bht1750.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbht1750_1ad5e6c37eb3f48508ee15b279db4e1a74" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int rawLuxValue</definition>
+        <argsstring></argsstring>
+        <name>rawLuxValue</name>
+        <briefdescription>
+<para>Raw lux value. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="95" column="1" bodyfile="Inc/bht1750.h" bodystart="95" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbht1750_1a229822154df7f3b7266e826e283c57e5" prot="public" static="no" mutable="no">
+        <type><ref refid="structbht1750__config" kindref="compound">bht1750_config</ref></type>
+        <definition>bht1750_config config</definition>
+        <argsstring></argsstring>
+        <name>config</name>
+        <briefdescription>
+<para>Configuration of the sensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="101" column="1" bodyfile="Inc/bht1750.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Sensor handle structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <collaborationgraph>
+      <node id="2">
+        <label>bht1750_config</label>
+        <link refid="structbht1750__config"/>
+      </node>
+      <node id="1">
+        <label>bht1750</label>
+        <link refid="structbht1750"/>
+        <childnode refid="2" relation="usage">
+          <edgelabel>config</edgelabel>
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="Inc/bht1750.h" line="86" column="1" bodyfile="Inc/bht1750.h" bodystart="86" bodyend="102"/>
+    <listofallmembers>
+      <member refid="structbht1750_1a391300894d34e8321b09b4d3667fdba3" prot="public" virt="non-virtual"><scope>bht1750</scope><name>buffer</name></member>
+      <member refid="structbht1750_1a229822154df7f3b7266e826e283c57e5" prot="public" virt="non-virtual"><scope>bht1750</scope><name>config</name></member>
+      <member refid="structbht1750_1ad5e6c37eb3f48508ee15b279db4e1a74" prot="public" virt="non-virtual"><scope>bht1750</scope><name>rawLuxValue</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

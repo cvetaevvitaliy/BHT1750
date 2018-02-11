@@ -1,3 +1,4 @@
+/// \file
 #include "bht1750.h"
 
 

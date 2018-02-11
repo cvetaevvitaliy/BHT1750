@@ -1,0 +1,415 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="bht1750_8h" kind="file" language="C++">
+    <compoundname>bht1750.h</compoundname>
+    <includes local="yes">stm32f0xx_hal.h</includes>
+    <includes local="no">stdbool.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>stdbool.h</label>
+      </node>
+      <node id="0">
+        <label>Inc/bht1750.h</label>
+        <link refid="bht1750_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>stm32f0xx_hal.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structbht1750__config" prot="public">bht1750_config</innerclass>
+    <innerclass refid="structbht1750" prot="public">bht1750</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="bht1750_8h_1a5ff454728a9a164b5469717c044546f4" prot="public" static="no">
+        <name>STM32F0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="7" column="9" bodyfile="Inc/bht1750.h" bodystart="7" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="bht1750_8h_1a666845b9dfa0ae4aa84362c4a0ae00b7" prot="public" static="no">
+        <name>BHT1750_I2C_ADDRESS</name>
+        <initializer>0x23&lt;&lt;1</initializer>
+        <briefdescription>
+<para>Sensor address Please refer to the datasheet to see when to use one of the two i2c addresses for this sensor. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="22" column="9" bodyfile="Inc/bht1750.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="enum">
+      <memberdef kind="enum" id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" prot="public" static="no" strong="no">
+        <type></type>
+        <name>BHT1750_STATE</name>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baa77a430150ed70514deaa4f7384a1203" prot="public">
+          <name>BHT1750_POWER_DOWN</name>
+          <initializer>= 0x00</initializer>
+          <briefdescription>
+<para>Sensor power up. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baed1247da9e97b879dacd18a661910e35" prot="public">
+          <name>BHT1750_POWER_UP</name>
+          <initializer>= 0x01</initializer>
+          <briefdescription>
+<para>Sensor sleep. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bae63f733e76255ccf07d9a5a2789df612" prot="public">
+          <name>BHT1750_RESET</name>
+          <initializer>= 0x07</initializer>
+          <briefdescription>
+<para>Reset sensor. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba1379ee730f34c9cd6ba5927d741ab4f9" prot="public">
+          <name>BHT1750_CONT_HRES_MODE</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+<para>Continuous high resolution mode 1. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba4ef312646dfcdb2e516db5fcffeea951" prot="public">
+          <name>BHT1750_CONT_HRES_MODE2</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+<para>Continuous high resolution mode 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6badbd3b1e2362c6ad59d07a20dc74c2da7" prot="public">
+          <name>BHT1750_CONT_LRES_MODE</name>
+          <initializer>= 0x13</initializer>
+          <briefdescription>
+<para>Continuous low resolution mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bad59646077fb36e8e81afc8e185968279" prot="public">
+          <name>BHT1750_ONCE_HRES_MODE</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+<para>One time high resolution mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba57ce7c6e79fc1b394767146baf848985" prot="public">
+          <name>BHT1750_ONCE_HRES_MODE2</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+<para>One time high resolution mode 2. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba6ea7c483f06288ed80ec2fba49c3c2a4" prot="public">
+          <name>BHT1750_ONCE_LRES_MODE</name>
+          <initializer>= 0x23</initializer>
+          <briefdescription>
+<para>One time low resolution mode. </para>          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+<para>Sensor state/mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="28" column="1" bodyfile="Inc/bht1750.h" bodystart="28" bodyend="65"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="bht1750_8h_1aad36f34327b7e113ed83c6b4760ecc18" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bht1750_init</definition>
+        <argsstring>(bht1750_config *, bht1750 *)</argsstring>
+        <name>bht1750_init</name>
+        <param>
+          <type><ref refid="structbht1750__config" kindref="compound">bht1750_config</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="structbht1750" kindref="compound">bht1750</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Sensor I2C initialisation - power up the sensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>config</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 config </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="110" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="bht1750_8h_1af7d3e6b391b440025292431e3349d233" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bht1750_powerDown</definition>
+        <argsstring>(bht1750 *)</argsstring>
+        <name>bht1750_powerDown</name>
+        <param>
+          <type><ref refid="structbht1750" kindref="compound">bht1750</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Power down the sensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="116" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="bht1750_8h_1a042d8e0a0bca2e86bd7f2461bce01df0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bht1750_powerUp</definition>
+        <argsstring>(bht1750 *)</argsstring>
+        <name>bht1750_powerUp</name>
+        <param>
+          <type><ref refid="structbht1750" kindref="compound">bht1750</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Power up the sensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="122" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="bht1750_8h_1aa9221c119f266785c7e46b01c8f3db94" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void bht1750_reset</definition>
+        <argsstring>(bht1750 *)</argsstring>
+        <name>bht1750_reset</name>
+        <param>
+          <type><ref refid="structbht1750" kindref="compound">bht1750</ref> *</type>
+        </param>
+        <briefdescription>
+<para>Reset the sensor. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 handle </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="128" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="bht1750_8h_1a55b538c2c9dc288adaf05221c63662ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bht1750_readOnce</definition>
+        <argsstring>(bht1750 *, BHT1750_STATE)</argsstring>
+        <name>bht1750_readOnce</name>
+        <param>
+          <type><ref refid="structbht1750" kindref="compound">bht1750</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref></type>
+        </param>
+        <briefdescription>
+<para>Read once the value from the sensor and then turn off the IC. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>state</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- BHT1750 mode / state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="135" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="bht1750_8h_1a100414faf5f799bc529712256e0b97b3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bht1750_readContinuous</definition>
+        <argsstring>(bht1750 *, BHT1750_STATE)</argsstring>
+        <name>bht1750_readContinuous</name>
+        <param>
+          <type><ref refid="structbht1750" kindref="compound">bht1750</ref> *</type>
+        </param>
+        <param>
+          <type><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref></type>
+        </param>
+        <briefdescription>
+<para>Continuous mode reading. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>handle</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- pointer to BHT1750 handle </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- BHT1750 mode/state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="143" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="bht1750_8h_1acdb9f37363a448bdeb96ab111c105cba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int bht1750_transformValue</definition>
+        <argsstring>(int, BHT1750_STATE)</argsstring>
+        <name>bht1750_transformValue</name>
+        <param>
+          <type>int</type>
+        </param>
+        <param>
+          <type><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref></type>
+        </param>
+        <briefdescription>
+<para>Formula to calculate the real lux value. </para>        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>rawLuxValue</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- raw lux value read from the sensor </para></parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>mode</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- BHT1750 mode/state </para></parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="151" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"></codeline>
+<codeline lineno="4"><highlight class="preprocessor">#ifndef<sp/>BHT1750_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>BHT1750_H_</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight></codeline>
+<codeline lineno="7" refid="bht1750_8h_1a5ff454728a9a164b5469717c044546f4" refkind="member"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>STM32F0<sp/>//<sp/>This<sp/>should<sp/>be<sp/>defined<sp/>at<sp/>runtime</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="comment">//<sp/>TODO:<sp/>Add<sp/>support<sp/>for<sp/>multiple<sp/>STM32XX</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#if<sp/>defined<sp/>STM32F0</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;stm32f0xx_hal.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;stdbool.h&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight></codeline>
+<codeline lineno="22" refid="bht1750_8h_1a666845b9dfa0ae4aa84362c4a0ae00b7" refkind="member"><highlight class="preprocessor">#define<sp/>BHT1750_I2C_ADDRESS<sp/>0x23&lt;&lt;1<sp/>//<sp/>ADDR<sp/>L</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="23"><highlight class="normal"></highlight><highlight class="comment">//#define<sp/>BHT1750_I2C_ADDRESS<sp/>0x5C&lt;&lt;1<sp/>//<sp/>ADDR<sp/>H</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="24"><highlight class="normal"></highlight></codeline>
+<codeline lineno="28" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" refkind="member"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">enum</highlight><highlight class="normal"><sp/>{</highlight></codeline>
+<codeline lineno="32" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baa77a430150ed70514deaa4f7384a1203" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baa77a430150ed70514deaa4f7384a1203" kindref="member">BHT1750_POWER_DOWN</ref><sp/>=<sp/>0x00,</highlight></codeline>
+<codeline lineno="36" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baed1247da9e97b879dacd18a661910e35" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6baed1247da9e97b879dacd18a661910e35" kindref="member">BHT1750_POWER_UP</ref><sp/>=<sp/>0x01,</highlight></codeline>
+<codeline lineno="40" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bae63f733e76255ccf07d9a5a2789df612" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bae63f733e76255ccf07d9a5a2789df612" kindref="member">BHT1750_RESET</ref><sp/>=<sp/>0x07,</highlight></codeline>
+<codeline lineno="44" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba1379ee730f34c9cd6ba5927d741ab4f9" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba1379ee730f34c9cd6ba5927d741ab4f9" kindref="member">BHT1750_CONT_HRES_MODE</ref><sp/>=<sp/>0x10,</highlight></codeline>
+<codeline lineno="48" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba4ef312646dfcdb2e516db5fcffeea951" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba4ef312646dfcdb2e516db5fcffeea951" kindref="member">BHT1750_CONT_HRES_MODE2</ref><sp/>=<sp/>0x11,</highlight></codeline>
+<codeline lineno="52" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6badbd3b1e2362c6ad59d07a20dc74c2da7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6badbd3b1e2362c6ad59d07a20dc74c2da7" kindref="member">BHT1750_CONT_LRES_MODE</ref><sp/>=<sp/>0x13,</highlight></codeline>
+<codeline lineno="56" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bad59646077fb36e8e81afc8e185968279" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6bad59646077fb36e8e81afc8e185968279" kindref="member">BHT1750_ONCE_HRES_MODE</ref><sp/>=<sp/>0x20,</highlight></codeline>
+<codeline lineno="60" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba57ce7c6e79fc1b394767146baf848985" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba57ce7c6e79fc1b394767146baf848985" kindref="member">BHT1750_ONCE_HRES_MODE2</ref><sp/>=<sp/>0x21,</highlight></codeline>
+<codeline lineno="64" refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba6ea7c483f06288ed80ec2fba49c3c2a4" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6ba6ea7c483f06288ed80ec2fba49c3c2a4" kindref="member">BHT1750_ONCE_LRES_MODE</ref><sp/>=<sp/>0x23</highlight></codeline>
+<codeline lineno="65"><highlight class="normal">}<sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref>;</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"></highlight></codeline>
+<codeline lineno="70" refid="structbht1750__config" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="74" refid="structbht1750__config_1a23e125244a7e27ff9ccc31b3b8495cfe" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>I2C_HandleTypeDef*<sp/><ref refid="structbht1750__config_1a23e125244a7e27ff9ccc31b3b8495cfe" kindref="member">i2c</ref>;</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"></highlight></codeline>
+<codeline lineno="79" refid="structbht1750__config_1af227be20459ab4b36c0be1dbaa170dad" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">volatile</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref><sp/><ref refid="structbht1750__config_1af227be20459ab4b36c0be1dbaa170dad" kindref="member">state</ref>;</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"></highlight></codeline>
+<codeline lineno="81"><highlight class="normal">}<sp/><ref refid="structbht1750__config" kindref="compound">bht1750_config</ref>;</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="86" refid="structbht1750" refkind="compound"><highlight class="keyword">typedef</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">struct<sp/></highlight><highlight class="normal">{</highlight></codeline>
+<codeline lineno="90" refid="structbht1750_1a391300894d34e8321b09b4d3667fdba3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/>uint8_t<sp/>buffer[5];</highlight></codeline>
+<codeline lineno="91"><highlight class="normal"></highlight></codeline>
+<codeline lineno="95" refid="structbht1750_1ad5e6c37eb3f48508ee15b279db4e1a74" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">unsigned</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="structbht1750_1ad5e6c37eb3f48508ee15b279db4e1a74" kindref="member">rawLuxValue</ref>;</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"></highlight></codeline>
+<codeline lineno="101" refid="structbht1750_1a229822154df7f3b7266e826e283c57e5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="structbht1750__config" kindref="compound">bht1750_config</ref><sp/><ref refid="structbht1750_1a229822154df7f3b7266e826e283c57e5" kindref="member">config</ref>;</highlight></codeline>
+<codeline lineno="102"><highlight class="normal">}<sp/><ref refid="structbht1750" kindref="compound">bht1750</ref>;</highlight></codeline>
+<codeline lineno="103"><highlight class="normal"></highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+<codeline lineno="110"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1aad36f34327b7e113ed83c6b4760ecc18" kindref="member">bht1750_init</ref>(<ref refid="structbht1750__config" kindref="compound">bht1750_config</ref>*,<sp/><ref refid="structbht1750" kindref="compound">bht1750</ref>*);</highlight></codeline>
+<codeline lineno="111"><highlight class="normal"></highlight></codeline>
+<codeline lineno="116"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1af7d3e6b391b440025292431e3349d233" kindref="member">bht1750_powerDown</ref>(<ref refid="structbht1750" kindref="compound">bht1750</ref>*);</highlight></codeline>
+<codeline lineno="117"><highlight class="normal"></highlight></codeline>
+<codeline lineno="122"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1a042d8e0a0bca2e86bd7f2461bce01df0" kindref="member">bht1750_powerUp</ref>(<ref refid="structbht1750" kindref="compound">bht1750</ref>*);</highlight></codeline>
+<codeline lineno="123"><highlight class="normal"></highlight></codeline>
+<codeline lineno="128"><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1aa9221c119f266785c7e46b01c8f3db94" kindref="member">bht1750_reset</ref>(<ref refid="structbht1750" kindref="compound">bht1750</ref>*);</highlight></codeline>
+<codeline lineno="129"><highlight class="normal"></highlight></codeline>
+<codeline lineno="135"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1a55b538c2c9dc288adaf05221c63662ad" kindref="member">bht1750_readOnce</ref>(<ref refid="structbht1750" kindref="compound">bht1750</ref>*,<sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref>);</highlight></codeline>
+<codeline lineno="136"><highlight class="normal"></highlight></codeline>
+<codeline lineno="137"><highlight class="normal"></highlight></codeline>
+<codeline lineno="143"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1a100414faf5f799bc529712256e0b97b3" kindref="member">bht1750_readContinuous</ref>(<ref refid="structbht1750" kindref="compound">bht1750</ref>*,<sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref>);</highlight></codeline>
+<codeline lineno="144"><highlight class="normal"></highlight></codeline>
+<codeline lineno="145"><highlight class="normal"></highlight></codeline>
+<codeline lineno="151"><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/><ref refid="bht1750_8h_1acdb9f37363a448bdeb96ab111c105cba" kindref="member">bht1750_transformValue</ref>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal">,<sp/><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref>);</highlight></codeline>
+<codeline lineno="152"><highlight class="normal"></highlight></codeline>
+<codeline lineno="153"><highlight class="normal"></highlight><highlight class="preprocessor">#endif<sp/></highlight><highlight class="comment">/*<sp/>BHT1750_H_<sp/>*/</highlight><highlight class="preprocessor"></highlight></codeline>
+    </programlisting>
+    <location file="Inc/bht1750.h"/>
+  </compounddef>
+</doxygen>

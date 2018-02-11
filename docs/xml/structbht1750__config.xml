@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.14">
+  <compounddef id="structbht1750__config" kind="struct" language="C++" prot="public">
+    <compoundname>bht1750_config</compoundname>
+    <includes refid="bht1750_8h" local="no">bht1750.h</includes>
+      <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structbht1750__config_1a23e125244a7e27ff9ccc31b3b8495cfe" prot="public" static="no" mutable="no">
+        <type>I2C_HandleTypeDef *</type>
+        <definition>I2C_HandleTypeDef* i2c</definition>
+        <argsstring></argsstring>
+        <name>i2c</name>
+        <briefdescription>
+<para>I2C Handle. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="74" column="1" bodyfile="Inc/bht1750.h" bodystart="74" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structbht1750__config_1af227be20459ab4b36c0be1dbaa170dad" prot="public" static="no" mutable="no">
+        <type><ref refid="bht1750_8h_1a576709c256100bbe700d2c4e81782c6b" kindref="member">BHT1750_STATE</ref></type>
+        <definition>volatile BHT1750_STATE state</definition>
+        <argsstring></argsstring>
+        <name>state</name>
+        <briefdescription>
+<para>Mode. </para>        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Inc/bht1750.h" line="79" column="1" bodyfile="Inc/bht1750.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Configuration structure. </para>    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Inc/bht1750.h" line="70" column="1" bodyfile="Inc/bht1750.h" bodystart="70" bodyend="81"/>
+    <listofallmembers>
+      <member refid="structbht1750__config_1a23e125244a7e27ff9ccc31b3b8495cfe" prot="public" virt="non-virtual"><scope>bht1750_config</scope><name>i2c</name></member>
+      <member refid="structbht1750__config_1af227be20459ab4b36c0be1dbaa170dad" prot="public" virt="non-virtual"><scope>bht1750_config</scope><name>state</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
