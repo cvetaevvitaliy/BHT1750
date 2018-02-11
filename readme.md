@@ -24,7 +24,7 @@ GND -> SD0 (this will pull low the SD0 line on the sensor and the slave address 
 ## Software setup
 Enable the I2C interface on your STM32 and select the fast mode (400KHz)
 
-## Implementation detayls
+## Implementation details
 
 This library blocks the main thread using `HAL_Delay()` to perform readings of the sensor from the I2C bus. It sends the right sequences of bytes to the sensor to power it up, start measurement, do readings, etc. The library supports continuous mode reading and only once reading mode. To optimise power consumption you can use the read once method or after performing several readings you can power off the sensor.
 
